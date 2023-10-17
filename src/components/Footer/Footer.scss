@@ -1,0 +1,32 @@
+.footer {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  padding: 60px 50px 50px;
+
+  &-wrap {
+    background: var(--fourth-color);
+  }
+
+  &__links {
+    margin-top: 10px;
+  }
+
+  &__link {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      color: rgba(238, 233, 233, 0.4);
+
+      .light & {
+        color: #2f7394;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.solid-button {
+  padding: 0 30px;
+  height: 55px;
+  background: var(--third-color);
+  color: var(--second-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  line-height: 55px;
+  border: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 2px 4px 30px 4px rgba(255, 255, 255, 0.2);
+
+    .light & {
+      box-shadow: 2px 4px 30px 4px rgba(47, 115, 148, 0.2);
+    }
+  }
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    background: linear-gradient(0deg, rgba(208, 208, 208, 0.4) 0%, rgba(208, 208, 208, 0.4) 100%), #fff;
+
+    .light & {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #2f7394;
+    }
+  }
+}
+
+.transparent-button {
+  padding: 0 30px;
+  height: 54px;
+  background-color: transparent;
+  color: var(--third-color);
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 700;
+  line-height: 54px;
+  border: 2px solid var(--third-color);
+  box-shadow: var(--box-shadow-2);
+}
+
+.hidden {
+  display: none;
+}

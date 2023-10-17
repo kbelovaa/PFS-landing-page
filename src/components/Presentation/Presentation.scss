@@ -1,0 +1,143 @@
+.description {
+  display: flex;
+  margin-top: 136px;
+
+  &.light {
+    color: #000;
+  }
+
+  &__img {
+    width: 713px;
+    margin-left: 90px;
+    margin-right: 52px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: -3px;
+    width: 535px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    &.light {
+      color: #232323;
+    }
+
+    &_highlighted {
+      transition: all 0.3s ease;
+      font-weight: 700;
+      text-shadow: var(--text-shadow);
+      color: var(--third-color);
+    }
+  }
+
+  &__text {
+    width: 392px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.36px;
+    margin-bottom: 22px;
+  }
+}
+
+.free-offer {
+  display: flex;
+  width: 1025px;
+  justify-content: space-between;
+  margin: 103px auto 0;
+}
+
+.offer {
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.44px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+}
+
+.steps {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  margin: 145px auto 250px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  width: 271px;
+  text-align: center;
+
+  &__number {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 90%;
+    letter-spacing: -2.4px;
+    margin-bottom: 75px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.44px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.16px;
+  }
+}
+
+.line {
+  position: absolute;
+  top: 113px;
+
+  &__base {
+    width: 1000px;
+    height: 1px;
+    background: #4b6571;
+
+    .light & {
+      background: #848484;
+    }
+  }
+
+  &__marker {
+    width: 11px;
+    height: 11px;
+    background: #4b6571;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+
+    .light & {
+      background: #848484;
+    }
+
+    &:nth-of-type(2) {
+      left: 135px;
+    }
+
+    &:nth-of-type(3) {
+      left: 495px;
+    }
+
+    &:nth-of-type(4) {
+      right: 130px;
+    }
+  }
+}

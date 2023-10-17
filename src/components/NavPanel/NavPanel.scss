@@ -1,0 +1,99 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 50px;
+  padding-right: 50px;
+
+  &__link {
+    font-size: 16px;
+    line-height: 90%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      color: rgba(238, 233, 233, 0.4);
+
+      .light & {
+        color: #2f7394;
+      }
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    width: 33px;
+    height: 20px;
+    display: inline-block;
+    user-select: none;
+    margin-right: 20px;
+
+    & > .nav__checkbox {
+      display: none;
+    }
+
+    & > .nav__switch {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 63px;
+    }
+
+    & > .nav__switch::before {
+      position: absolute;
+      content: '';
+      width: 14.9px;
+      height: 14.9px;
+      right: 2.54px;
+      bottom: 2.6px;
+      background-color: #243e4c;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__checkbox:checked + &__switch::before {
+    transform: translateX(-12px);
+    background-color: #fff;
+  }
+
+  &__checkbox:checked + &__switch {
+    background-color: #243e4c;
+  }
+
+  &__icon {
+    position: absolute;
+    transition: all 0.3s ease;
+
+    &_moon {
+      right: 3.4px;
+      bottom: 1.6px;
+    }
+
+    &_sun {
+      right: 4px;
+      bottom: 4px;
+    }
+
+    .light &_moon,
+    .dark &_sun {
+      display: none;
+    }
+
+    .dark &_moon,
+    .light &_sun {
+      display: inline-block;
+    }
+  }
+
+  &__checkbox:checked + &__switch &__icon {
+    transform: translateX(-12px);
+  }
+}
