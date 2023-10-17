@@ -109,7 +109,7 @@ const SignUp = ({ signUpRef }) => {
               Username
             </label>
             <span className={usernameError ? 'form__error' : 'hidden'}>
-              The username must contain from 3 to 20 characters, including Latin letters, digits and symbols ._-@$
+              The username must contain from 3 to 20 characters. It can include Latin letters, digits and symbols ._-@$
             </span>
           </div>
           <div className="form__item">
