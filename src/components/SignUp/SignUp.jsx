@@ -34,7 +34,7 @@ const SignUp = ({ signUpRef }) => {
       setUsernameError(false);
     }
     // + checking on existing username
-    if (!/^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,}$/.test(password)) {
+    if (password.length < 4) {
       setPasswordError(true);
     } else {
       setPasswordError(false);
@@ -168,8 +168,7 @@ const SignUp = ({ signUpRef }) => {
               </svg>
             </span>
             <span className={passwordError ? 'form__error' : 'hidden'}>
-              The password must contain at least 8 characters and include at least 1 lowercase and 1 uppercase Latin
-              letter, 1 digit and 1 special character (!@#$&*)
+              The password must contain at least 4 characters
             </span>
           </div>
           <div className="form__item">
