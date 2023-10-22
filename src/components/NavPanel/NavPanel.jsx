@@ -47,60 +47,60 @@ const NavPanel = ({ handleSignUp }) => {
               fill="none"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M6 8C7.10457 8 8 7.10457 8 6C8 4.89543 7.10457 4 6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8Z"
                 stroke="#243E4C"
               />
-              <path d="M6 2.5V1.5" stroke="#243E4C" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M6 10.5V9.5" stroke="#243E4C" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 2.5V1.5" stroke="#243E4C" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M6 10.5V9.5" stroke="#243E4C" strokeLinecap="round" strokeLinejoin="round" />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M2.5 6H1H2.5Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M11 6H9.5H11Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.47485 3.5255L9.53551 2.46484L8.47485 3.5255Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M2.46436 9.53527L3.52502 8.47461L2.46436 9.53527Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.47485 8.47461L9.53551 9.53527L8.47485 8.47461Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M2.46436 2.46484L3.52502 3.5255L2.46436 2.46484Z"
                 stroke="#243E4C"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </label>

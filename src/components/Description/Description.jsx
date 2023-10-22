@@ -25,13 +25,14 @@ const Description = () => {
               <h4 className="stage__title">Design your future</h4>
               <p className={showMore ? 'hidden' : 'stage__text'}>
                 Design your future with precision and purpose. Turn your dreams into actionable goals. Now is the time
-                to let your imagination run as you imagine your ideal future.
+                to let your imagination run as you imagine your ideal future. Here are a few questions to help you get
+                started:
                 <br />
-                Here are a few questions to help you get started:
+                If you had all the time, capital, and freedom to choose anything you wanted, what would you do?
                 <br />
-                If you had all the time, capital, and freedom to choose anything you wanted, what would you do? If there
-                were no such thing as failure, what life experiences would you have? If you won the lottery, would you
-                go to the same job tomorrow?
+                If there were no such thing as failure, what life experiences would you have?
+                <br />
+                If you won the lottery, would you go to the same job tomorrow?
                 <span className="stage__link" onClick={() => setShowMore(true)}>
                   ...more
                 </span>
@@ -39,13 +40,14 @@ const Description = () => {
               <div className={showMore ? 'stage__text' : 'hidden'}>
                 <p className="stage__passage">
                   Design your future with precision and purpose. Turn your dreams into actionable goals. Now is the time
-                  to let your imagination run as you imagine your ideal future.
-                </p>
-                <p className="stage__passage">Here are a few questions to help you get started:</p>
-                <p className="stage__passage">
-                  If you had all the time, capital, and freedom to choose anything you wanted, what would you do? If
-                  there were no such thing as failure, what life experiences would you have? If you won the lottery,
-                  would you go to the same job tomorrow?
+                  to let your imagination run as you imagine your ideal future. Here are a few questions to help you get
+                  started:
+                  <br />
+                  If you had all the time, capital, and freedom to choose anything you wanted, what would you do?
+                  <br />
+                  If there were no such thing as failure, what life experiences would you have?
+                  <br />
+                  If you won the lottery, would you go to the same job tomorrow?
                   <br />
                   Let us look at two examples of goals - one short-term and one long-term.
                 </p>

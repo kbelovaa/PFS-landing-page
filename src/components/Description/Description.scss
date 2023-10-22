@@ -1,17 +1,17 @@
-.stages-wrapper {
-  background: #fff;
-
-  &.light {
-    background: #eee;
-  }
-}
-
 .stages {
   height: 2090px;
   padding: 80px 50px 0;
 
   &_big {
-    height: 2337px;
+    height: 2307px;
+  }
+
+  &-wrapper {
+    background: #fff;
+
+    &.light {
+      background: #eee;
+    }
   }
 }
 
